@@ -1,6 +1,7 @@
 package com.example.capgemini.library.service.mapper;
 
 import com.example.capgemini.library.entity.Book;
+import com.example.capgemini.library.entity.Category;
 import com.example.capgemini.library.entity.dto.BookDTO;
 
 public class BookMapper {
@@ -13,6 +14,7 @@ public class BookMapper {
         bookDTO.setYear(book.getYear());
         bookDTO.setAuthor(book.getAuthor());
         bookDTO.setCategory(book.getCategory());
+        bookDTO.setIdcategory(book.getCategory().getIdCategory());
 
         return bookDTO;
     }
