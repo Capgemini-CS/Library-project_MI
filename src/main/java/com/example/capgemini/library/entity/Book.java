@@ -15,13 +15,13 @@ public class Book {
 
     @Column(name = "id_book")
     @Id
-    private int idBook;
+    private Integer idBook;
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "year")
-    private int year;
+    private Integer year;
 
     @Column(name = "author")
     private String author;
